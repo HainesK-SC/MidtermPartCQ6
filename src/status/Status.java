@@ -18,7 +18,6 @@ import java.util.Scanner;
  * @author Kyle Haines - 991501735
  */
 public class Status {
-
     /**
      * @param args the command line arguments
      */
@@ -26,8 +25,9 @@ public class Status {
     {
     Scanner in =new Scanner(System.in);
     System.out.println("Enter the user status code (zero,one,two,three) in string");
-    String code = in.next();
+    String codeInput = in.next().toUpperCase();
     StausUser t= new StausUser();
+    StausUser.StatusCodes code = StausUser.StatusCodes.valueOf(codeInput);
     t.statusDetail(code); 
     }
     
