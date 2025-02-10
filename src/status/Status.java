@@ -15,6 +15,7 @@ import java.util.Scanner;
  * change the code to use enums which avoids String input 
  * then print the status details. 
  * @author srinivsi 
+ * @author Kyle Haines - 991501735
  */
 public class Status {
 
